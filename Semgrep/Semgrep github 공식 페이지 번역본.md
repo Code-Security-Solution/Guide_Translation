@@ -56,7 +56,7 @@ Semgrep은 코드용 의미론적 grep입니다. 예를 들어 `grep "2"`를 실
 
 Semgrep AppSec 플랫폼은 20,000개 이상의 SAST, SCA 및 비밀 탐색 관련 규칙을 제공하며, Semgrep 보안 연구팀이 작성 및 유지 관리하는 높은 정확도의 프로 규칙을 포함합니다. 이를 통해 보안 팀이 탐지된 내용을 개발자에게 직접 제공할 수 있어 개발 속도를 늦추지 않으면서도 보안성을 강화할 수 있습니다.
 
-Semgrep은 사용자의 로컬 컴퓨터 또는 빌드 환경에서 코드를 분석하며, **기본적으로 코드가 업로드되지 않습니다**. [시작하기 →.](#getting-started-)
+Semgrep은 사용자의 로컬 컴퓨터 또는 빌드 환경에서 코드를 분석하며, **기본적으로 코드가 업로드되지 않습니다**. [시작하기 →.](#시작하기-🚀)
 
 <a href="#option-1-getting-started-from-the-cli">
 <img src="https://raw.githubusercontent.com/semgrep/semgrep/develop/images/semgrep-scan-cli.jpg" alt="Semgrep CLI 이미지"/></a>
@@ -142,17 +142,16 @@ $ semgrep -e '$X == $X' --lang=py path/to/src
 
 Semgrep 에코시스템은 다음을 포함합니다:
 
-- [Semgrep Community Edition](https://semgrep.dev/docs/cli-reference/) - 모든 것의 중심에 있는 오픈 소스 프로그램 분석 엔진입니다. 허위 긍정(FP)에 대한 높은 허용도를 필요로 하는 컨설턴트, 보안 감사원, 침투 테스터와 같은 일회성 사용 사례에 적합합니다.
+- [Semgrep Community Edition](https://semgrep.dev/docs/cli-reference/) - 모든 기능의 핵심이 되는 오픈소스 프로그램 분석 엔진입니다. 오탐(False Positive)이 많이 나도 무방한 단발성 작업(일회성, 즉흥적 작업)에 적합해요. 예를 들어, 컨설턴트, 보안 감사관, 침투 테스터처럼 빠르게 결과가 필요할 때 유용합니다.
 
 - [Semgrep AppSec 플랫폼](https://semgrep.dev/login?utm_medium=readme&utm_source=github&utm_content=appsec-platform) - 조직 전체에서 SAST, SCA, 및 비밀 검사(Secrets scanning)를 손쉽게 조정하고 확장할 수 있도록 지원합니다. 개발자를 방해하지 않으며, 개발자가 볼 수 있는 결과를 사용자 지정하고, GitHub, GitLab, CircleCI 등 다양한 CI 공급자와 통합할 수 있습니다. 무료 및 유료 버전이 포함되어 있습니다.
-
-  - [Semgrep Code (SAST)](https://semgrep.dev/products/semgrep-code?utm_medium=readme&utm_source=github&utm_content=semgrep-code) - 개발자가 보안 지식 없이도 문제를 신속하게 해결할 수 있도록 도와주는 SAST 도구입니다. 개발자가 방해받지 않도록 맞춤형 보안 가이드와 단계별 해결책을 제공합니다.
-
-  - [Semgrep Supply Chain (SSC)](https://semgrep.dev/products/semgrep-supply-chain?utm_medium=readme&utm_source=github&utm_content=ssc) - 오픈 소스 서드파티 라이브러리 및 함수에서 도달 가능한 취약점을 감지하는 고신뢰 종속성 스캐너입니다.
-
-  - [Semgrep Secrets (비밀 검사)](https://semgrep.dev/blog/2023/introducing-semgrep-secrets/) - 의미론적 분석, 개선된 엔트로피 분석, 검증을 사용하여 개발자의 워크플로에서 민감한 자격 증명을 정확하게 식별합니다.
-
-  - [Semgrep Assistant (AI)](https://semgrep.dev/products/semgrep-code/assistant?utm_medium=readme&utm_source=github&utm_content=assistant) - AI 기반의 AppSec 엔지니어로서, Semgrep 결과를 우선 순위화하고, 분류하며, 해결하는 데 도움을 줍니다. 인간 사용자의 97%가 Assistant의 자동 분류 결정을 수락하며, 80%가 제공된 해결 가이드를 유용하다고 평가했습니다. 자세한 내용은 [이 개요](https://a.storyblok.com/f/151984/x/2d12dc0223/whitepaper_-ai-powered-appsec-engineer-automate.pdf?cv=1728584410408)를 참조하세요.
+- [Semgrep Code (SAST)](https://semgrep.dev/products/semgrep-code?utm_medium=readme&utm_source=github&utm_content=semgrep-code) - 개발자가 보안 지식 없이도 문제를 신속하게 해결할 수 있도록 도와주는 SAST 도구입니다. 개발자가 방해받지 않도록 맞춤형 보안 가이드와 단계별 해결책을 제공합니다.
+  
+- [Semgrep Supply Chain (SSC)](https://semgrep.dev/products/semgrep-supply-chain?utm_medium=readme&utm_source=github&utm_content=ssc) - 오픈 소스 서드파티 라이브러리 및 함수에서 도달 가능한 취약점을 감지하는 고신뢰 종속성 스캐너입니다.
+  
+- [Semgrep Secrets (비밀 검사)](https://semgrep.dev/blog/2023/introducing-semgrep-secrets/) - 의미론적 분석, 개선된 엔트로피 분석, 검증을 사용하여 개발자의 워크플로에서 민감한 자격 증명을 정확하게 식별합니다.
+  
+- [Semgrep Assistant (AI)](https://semgrep.dev/products/semgrep-code/assistant?utm_medium=readme&utm_source=github&utm_content=assistant) - AI 기반의 AppSec 엔지니어로서, Semgrep 결과를 우선 순위화하고, 분류하며, 해결하는 데 도움을 줍니다. 인간 사용자의 97%가 Assistant의 자동 분류 결정을 수락하며, 80%가 제공된 해결 가이드를 유용하다고 평가했습니다. 자세한 내용은 [이 개요](https://a.storyblok.com/f/151984/x/2d12dc0223/whitepaper_-ai-powered-appsec-engineer-automate.pdf?cv=1728584410408)를 참조하세요.
 
 추가 리소스:
 
@@ -204,15 +203,15 @@ Semgrep의 Playground에서 실행하려면 [여기를 클릭하세요](https://
 
 Semgrep의 전체 [문서](https://semgrep.dev/docs)를 탐색하세요. Semgrep이 처음이라면, [문서 > 시작하기](https://semgrep.dev/docs/getting-started/) 또는 [인터랙티브 튜토리얼](https://semgrep.dev/learn)을 확인하세요.
 
-### 메트릭
+### 사용 데이터 수집  
 
-[Registry](https://semgrep.dev/r)의 원격 구성을 사용하면(예: `--config=p/ci`) 익명화된 규칙 메트릭이 semgrep.dev에 보고됩니다.
+[Registry](https://semgrep.dev/r)의 원격 구성을 사용할 경우(예: `--config=p/ci`), Semgrep은 특정 규칙이 실행될 때 발생하는 **사용 통계 및 분석 데이터를** semgrep.dev에 익명으로 전송합니다.  
 
-로컬 파일에서 구성(`--config=xyz.yml`)을 사용할 경우, 메트릭이 **활성화되지 않습니다**.
+반면, 로컬 파일(`--config=xyz.yml`)을 직접 사용하면, 이러한 데이터 수집이 **활성화되지 않습니다**.  
 
-Registry 규칙 메트릭을 비활성화하려면 `--metrics=off` 옵션을 사용하세요.
+데이터 수집을 원하지 않는다면 `--metrics=off` 옵션을 사용하여 비활성화할 수 있습니다.  
 
-Semgrep의 [개인정보 보호 정책](https://semgrep.dev/docs/metrics)에서는 데이터 수집 결정 원칙과 활성화된 경우 수집되는 데이터 및 수집되지 않는 데이터에 대한 설명을 제공합니다.
+Semgrep의 [개인정보 보호 정책](https://semgrep.dev/docs/metrics)에서는 데이터 수집의 원칙과, 활성화된 경우 어떤 데이터가 수집되며 어떤 데이터가 수집되지 않는지를 설명합니다.
 
 ### 추가 정보
 
