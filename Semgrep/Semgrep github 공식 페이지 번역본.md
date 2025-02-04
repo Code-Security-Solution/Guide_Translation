@@ -226,7 +226,7 @@ Semgrep의 [개인정보 보호 정책](https://semgrep.dev/docs/metrics)에서�
 
 ### 업그레이드
 
-Semgrep을 업그레이드하려면 아래 명령 중 설치 방법에 해당하는 것을 실행하세요:
+Semgrep을 업그레이드하려면 Semgrep을 설치한 방식에 맞춰서 아래 명령어를 실행하세요.
 
 ```sh
 # Homebrew 사용 시
