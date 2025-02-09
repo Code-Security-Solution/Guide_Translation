@@ -2,13 +2,10 @@
 
 <p align="center">
   <a href="https://semgrep.dev">
-    <picture>
-      <source media="(prefers-color-scheme: light)" srcset="images/semgrep-logo-light.svg">
-      <source media="(prefers-color-scheme: dark)" srcset="images/semgrep-logo-dark.svg">
-      <img src="https://raw.githubusercontent.com/semgrep/semgrep/develop/images/semgrep-logo-light.svg" height="100" alt="Semgrep logo"/>
-    </picture>
+    <img src="https://raw.githubusercontent.com/semgrep/semgrep/develop/images/semgrep-logo-light.svg" height="100" alt="Semgrep logo"/>
   </a>
 </p>
+
 <h2 align="center">
     믿을 수 없을 정도로 빠른 코드 스캐닝
 </h2>
