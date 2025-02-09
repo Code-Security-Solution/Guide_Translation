@@ -2,13 +2,10 @@
 
 <p align="center">
   <a href="https://semgrep.dev">
-    <picture>
-      <source media="(prefers-color-scheme: light)" srcset="images/semgrep-logo-light.svg">
-      <source media="(prefers-color-scheme: dark)" srcset="images/semgrep-logo-dark.svg">
-      <img src="https://raw.githubusercontent.com/semgrep/semgrep/develop/images/semgrep-logo-light.svg" height="100" alt="Semgrep logo"/>
-    </picture>
+    <img src="https://raw.githubusercontent.com/semgrep/semgrep/develop/images/semgrep-logo-light.svg" height="100" alt="Semgrep logo"/>
   </a>
 </p>
+
 <h2 align="center">
   Code scanning at ludicrous speed.
 </h2>
